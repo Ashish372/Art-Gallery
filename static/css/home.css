@@ -1,0 +1,235 @@
+.body{
+  overflow-x: hidden;
+}
+
+.PartA, .PartD{
+  width:100%;
+  height:650px;
+  background-image: url('/Project/static/images/home1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.PartD{
+  background-image: url('/Project/static/images/wall.png');
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.PartDleft, .PartDright{
+  width:50%;
+}
+
+.PartDleft img{
+  height: 80%;
+  margin: 50px 15%;
+  border: 8px solid black;
+}
+
+.PartDright{
+  margin: 100px 10%;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.PartA h4{
+  margin: 0;
+  padding:8%;
+  padding-bottom:0px;
+  font-size: 40px;
+}
+
+.PartA p{
+  padding:0px 8%;
+  font-size: 20px;
+}
+
+.PartA button{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  height:40px;
+  width:100px;
+  background-color: inherit;
+  border: 2px solid black;
+  margin:0px 8%;
+  outline: none;
+  cursor: pointer;
+}
+
+.partA button:hover{
+  border: 2px solid #dda15e;
+  color:#dda15e;
+}
+
+.PartB{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  margin:30px 0px;
+  padding: 50px 0px;
+  justify-content: space-around;
+}
+
+.PartBinner{
+  width: 30%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.PartBinner img{
+  margin: auto;
+  justify-content:center;
+}
+
+.PartBinner p{
+  margin-top: 25px;
+}
+
+.PartC{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width:100%;
+  background-color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.PartCinner{
+  flex-direction: row;
+  width:60%;
+  padding: 0px 20%;
+}
+
+.PartC button{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("/Project/static/images/cs3.png");
+  border: 8px solid black;
+  outline: none;
+  margin: 10px;
+  font-size: 30px;
+  text-align-last: center;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.PartC button:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+#sell{
+  background-image: url("/Project/static/images/cs2.png");
+}
+
+#buy{
+  background-image: url("/Project/static/images/cs1.png");
+}
+
+.PartCleft{
+  float: left;
+  height: 500px;
+  width: 50%;
+  text-align:center;
+}
+
+.PartCright{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 50%;
+  text-align:center;
+}
+
+@media screen and (max-width: 1050px) {
+  .PartD{
+    height: fit-content;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .PartDleft{
+    width:100%;
+  }
+
+  .PartDleft img{
+    width: 30%;
+    height: auto;
+    margin: 0px 35%;
+  }
+
+  .PartDright{
+    width:80%;
+    margin: 50px 10%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .PartC{
+    height: fit-content;
+  }
+  .PartCinner{
+    width:100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .PartCleft{
+    width:90%;
+    margin: 0px 5%;
+  }
+
+  .PartCright{
+    width:100%;
+    padding-top: 30px;
+  }
+
+  #discover , #sell, #buy{
+    width:80%;
+    margin: 20px auto;
+    border: 3.5px solid black;
+  }
+
+  .PartDleft img{
+    width: 50%;
+    height: auto;
+    margin: 0px 25%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .PartB{
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PartBinner img{
+    width:80px;
+    height: auto;
+    margin:auto;
+  }
+
+  #lock{
+    width:50px;
+  }
+
+  .PartBinner{
+    padding-top: 5%;
+    padding-bottom: 100px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .PartA{
+    background-image: url('/Project/static/images/home1.png');
+    background-position: left;
+  }
+}

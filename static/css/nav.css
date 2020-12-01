@@ -1,0 +1,118 @@
+.topnav {
+  display: inline-block;
+  background-color: #202020;
+  width: 100%;
+  text-decoration: none;
+  height: 85px;
+  transition: height 0.6s ease-in-out;
+  margin: 0px;
+  padding:0px;
+  border: none;
+  top: 0;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.options{
+  margin-left: 20px;
+  margin-top: 30px;
+  display:flex;
+  flex-direction: row;
+  float: right;
+}
+
+.options a{
+  padding-right: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navname{
+  padding-right: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.options a:hover, .options a:focus{
+  text-decoration: none;
+  color: #dda15e;
+}
+
+.leftNav{
+  float: left;
+  margin:0px 20px;
+}
+
+@media screen and (max-width: 900px) {                                         /*Adjusting NavBar for smaller screens*/
+
+  .topnav{
+    border: none;
+    transition: height 0.6s ease-in-out;
+  }
+
+  .topnav .options{
+    display: none;
+  }
+
+  .topnav a.icon {
+    display:inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    right:0;
+    top:0;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+    position:absolute;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    transition: height 0.6s ease-in-out;
+    padding-top: 50px;
+  }
+
+  .topnav.responsive .icon{
+    animation: fadeIn 2s;
+  }
+
+  .topnav.responsive .icon:hover {
+    color:  black;
+  }
+
+  .topnav.responsive .leftNav{
+    margin: 2px auto;
+    animation: fadeIn 2s;
+  }
+
+  .topnav.responsive .options{
+    display: contents;
+    text-align: center;
+    animation: fadeIn 2s;
+  }
+
+  .topnav.responsive .options a{
+    margin: 10px;
+  }
+
+  .topnav.responsive .options a:nth-child(2){
+    margin-top: 20px;
+  }
+
+}

@@ -1,0 +1,92 @@
+.paymentgateway{
+  background-color: white;
+  height: fit-content;
+  width:50%;
+  margin: 0px auto;
+  padding: 1%;
+
+}
+
+.payop, .address{
+  display:flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.address h4{
+  padding: 20px 0px;
+}
+
+.address button, input[type="submit"]{
+  background-color: #ffd166;
+  cursor: pointer;
+  width:50%;
+  margin: 0px 25%;
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form input[type="radio"]{
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.card, .paytm{
+  margin: 50px;
+}
+
+.error{
+  color: red;
+  font-size: 15px;
+}
+
+.choice{
+  display: flex;
+  flex-direction:
+}
+
+.choice p {
+  margin-top: 16px;
+}
+
+.choice img{
+  margin-top: 12px;
+}
+
+
+@media screen and (max-width: 900px)
+{
+  .paymentgateway{
+    width:80%;
+    margin: 0px 10%;
+  }
+  .address button, input[type="submit"]{
+    width:250px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .paymentgateway{
+    width:100%;
+    margin: 0;
+  }
+  .address{
+    margin:50px auto;
+  }
+  .address h3 , .address h4 ,.payop{
+    margin: 20px ;
+  }
+}

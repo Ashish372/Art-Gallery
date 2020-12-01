@@ -1,0 +1,100 @@
+.partA{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.PartA img{
+  float:left;
+  height:500px;
+  margin: 0px 5%;
+  border: 5px solid black;
+}
+
+.PartAright{
+  float: right;
+  margin: 0px 5%;
+}
+
+.PartA h4 , #ourteam{
+  font-size: 40px;
+}
+
+#au1{
+  display: none;
+}
+
+.PartAright p{
+  font-size: 20px;
+}
+
+.Team{
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  width:30%;
+  height: 100px;
+  margin: 20px 1.5%;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.card h3{
+  padding: 8px;
+  padding-bottom: 0;
+}
+.card p{
+  font-size: 16px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .partA,.Team{
+    flex-direction: column;
+  }
+
+  .partA img{
+    width:400px;
+    margin: auto;
+  }
+
+  .PartAright{
+    text-align:center;
+    padding: 10%;
+  }
+
+  #au1{
+    display:block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #au2{
+    display: none;
+  }
+
+  .card{
+    width:90%;
+    margin: 5%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .partA img{
+    width:200px;
+    height: auto;
+  }
+
+  .PartAright p{
+    font-size: 17px;
+  }
+
+  .card p{
+    font-size: 13px;
+  }
+}
