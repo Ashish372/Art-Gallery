@@ -32,18 +32,18 @@
     <div class="Team">
 
       <div class="card">
-        <h3>Ashish Bandarkar<h3>
-        <p>Email: 8533.ashishit@gmail<br>Contact: 9820394946</p>
+        <h3>Sid<h3>
+        <p>Email:<br>Contact:</p>
       </div>
 
       <div class="card">
-        <h3>Hanita Rego<h3>
-        <p>Email: 8693.hanita.it@gmail.com<br>Contact: 8850367683</p>
+        <h3>Jhon<h3>
+        <p>Email:<br>Contact:</p>
       </div>
 
       <div class="card">
-        <h3>Ritika Fargose<h3>
-        <p>Email: 8665.ritika.it@gmail.com<br>Contact: 8600531344</p>
+        <h3>Juna<h3>
+        <p>Email:<br>Contact:</p>
       </div>
     </div>
 
