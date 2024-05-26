@@ -1,5 +1,3 @@
-Writing a README for your project is crucial for providing information about what your project does, how to set it up, and how to use it. Here's a suggested outline and some tips for writing a better README for your e-commerce website project:
-
 ### Art Gallery
 
 ### Overview:
